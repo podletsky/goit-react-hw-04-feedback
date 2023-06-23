@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Statistic.module.css';
 
-const Statistic = props => {
-  const { good, neutral, bad, positiveFeedback, total } = props;
+const Statistic = ({ good, neutral, bad, positiveFeedback, total }) => {
   return (
     <>
       <ul className={styles.listItem}>
